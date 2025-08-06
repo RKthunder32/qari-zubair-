@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Madrasa Quran Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+
+    header {
+      padding: 20px 40px;
+      background-color: #101010;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Amiri', serif;
+      font-size: 2rem;
+      color: #2ecc71;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 25px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #2ecc71;
+    }
+
+    .hero {
+      padding: 100px 20px;
+      text-align: center;
+      background: url('https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg') no-repeat center center/cover;
+    }
+
+    .hero h1 {
+      font-family: 'Amiri', serif;
+      font-size: 3.5rem;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #eee;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .section {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2.3rem;
+      color: #2ecc71;
+      margin-bottom: 20px;
+      font-family: 'Amiri', serif;
+    }
+
+    .section p {
+      color: #bbb;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .service {
+      background-color: #161616;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #2e2e2e;
+      transition: 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      border-color: #2ecc71;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #25d366;
+      z-index: 9999;
+      transition: 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebc5b;
+    }
+
+    .qari {
+      margin-top: 50px;
+    }
+
+    .qari img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid #2ecc71;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .qari h3 {
+      font-family: 'Amiri', serif;
+      color: #2ecc71;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .section h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <div class="logo">Al-Zubair Quran Academy</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Courses</a>
+      <a href="#qari">Qari Zubair</a>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <h1>Learn Quran with Tajweed</h1>
+    <p>We teach Quran Majeed with proper Tajweed and Islamic values under the guidance of expert teacher Qari Zubair.</p>
+  </section>
+
+  <section class="section" id="about" data-aos="fade-up">
+    <h2>About Our Madrasa</h2>
+    <p>Al-Zubair Quran Academy is dedicated to providing authentic Quranic education to children and adults around the world. Our goal is to help students build a strong connection with the Quran through proper pronunciation (Tajweed), memorization, and understanding of Islamic teachings.</p>
+  </section>
+
+  <section class="section" id="services" data-aos="fade-up">
+    <h2>Our Courses</h2>
+    <div class="services">
+      <div class="service" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Quran with Tajweed</h3>
+        <p>Learn to recite the Quran beautifully and correctly with all Tajweed rules.</p>
+      </div>
+      <div class="service" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Qaida Noorania</h3>
+        <p>Beginner course for children and adults to recognize Arabic letters and sounds.</p>
+      </div>
+      <div class="service" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Hifz Program</h3>
+        <p>Full memorization program under expert supervision with revision plans.</p>
+      </div>
+      <div class="service" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Islamic Studies</h3>
+        <p>Learn essential Islamic knowledge, duas, beliefs, and character building.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section qari" id="qari" data-aos="fade-up">
+    <h2>Meet Qari Zubair</h2>
+    <img src="image.png" alt="Qari Zubair">
+    <h3>Qari Zubair</h3>
+    <p>An experienced and certified Quran teacher with deep knowledge in Tajweed and Islamic sciences. Qari Zubair has taught over 500 students across the globe with sincerity and dedication.</p>
+  </section>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/923189029306" target="_blank" class="whatsapp-button">
+    💬 Contact on WhatsApp
+  </a>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
